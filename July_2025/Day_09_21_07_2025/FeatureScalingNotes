@@ -1,0 +1,42 @@
+Interview Questions
+=====================
+How to find only the columns that has data type as object
+
+Feature Scaling
+===============
+Transforming one numerical data to another numerical data is feature scaling
+In scenarios like - when visualising the data for number of olympic medals between US and Nepal,
+the data range difference is huge to scale it in a view, so we encode the numerical data to fit in the view
+
+when should we go for this feature scaling?
+For the models that use distance based manipulation/algorithm
+Examples - KNN (K Nearest Neighbour), Kmeans clustering(unsupervised learning)
+
+Feature scaling can be done in two ways
+1. Normalisation -
+==================
+This is process of converting existing numerical data into normalised numerical data.
+The term 'Normalised data' means distribution of data falls under uniform distribution.
+
+from sklearn.preprocessing import MinMaxScaler
+
+output will always be between 0 to +1
+
+2. Standardization -
+====================
+This is process of converting existing numerical data into normalised numerical data.
+The term 'standardised data' means distribution of data falls under normal distribution.
+
+from sklearn.preprocessing import StandardScaler
+
+output will always be between -1 to +1
+
+
+Notes: Datas generally falls under two kinds of distribution.
+1. Normal distribution : based on mean/average (sin wave/bell curve)
+2. Uniform distribution : based upon equally spread data on flat scale (rectangle)
+
+Analogy for normal distribution:
+students can distributed above and below average
+Analogy for uniform distribution:
+students are distributed by departments (no specifications)

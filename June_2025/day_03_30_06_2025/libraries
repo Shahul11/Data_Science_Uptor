@@ -1,0 +1,18 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+scipy
+statsmodels
+
+
+installation process
+pattern 1
+
+pip install pandas
+
+patter 2
+
+pip install scikit-learn scipy
+

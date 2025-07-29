@@ -1,0 +1,35 @@
+Visualization
+--------------
+Concept of  representing data in the form of graph
+why it is easier to understand thru graph view than data view
+
+
+Libraries used for visualization
+1. matplotlib (primary)
+2.seaborn (primary)
+3.plotly
+4.dash
+
+Types of Visualization
+ 1. Univariate  - only one column is needed
+ 2. Bivariate  - two column is needed
+
+
+Note:
+ 1: Generally graph used in visualization is 2 dimensional data
+ 2: Visualization can be applied in any phase of the modal
+ 3: One of the pre-process concept of machine learning is EDA (Exploratory Data Analysis)
+ 4: EDA can be used for finding outliers (abnormal data) and many more applications we use it
+
+ Types of plot: (applicable for both seaborn and Matplotlib)
+ 1. Scatter Plot (number vs number)
+ 2. Box Plot (Univariate - numerical data)
+ 3. Pie chart (numerical vs categorical - % based )
+ 4. Bar Plot (categorical vs numerical - aggregation)
+ 5. HeatMap (correlation - Any column variance)
+
+
+
+
+
+
