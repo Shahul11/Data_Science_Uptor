@@ -1,0 +1,20 @@
+year        House_Price
+1990        10000
+1991        20000
+1992        30000
+1993        40000
+1994        50000
+1995        60000
+1996        70000
+
+
+199 ---> 80000
+
+
+"year" is independent data or feature dta or input data
+"house_price" is dependent data or target data or output data
+
+By seeing the above list we can conclude that data is linear
+So Year increase, the price increases
+
+Now, model can  able to read the history  on it's linearity and it can be used for predication
