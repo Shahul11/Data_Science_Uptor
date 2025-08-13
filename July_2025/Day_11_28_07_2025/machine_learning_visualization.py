@@ -1,11 +1,11 @@
-# import matplotlib.pyplot as plt
-#
-# """Sample Scatter graph plotting thru pyplot - bivaraite"""
-#
+import matplotlib.pyplot as plt
+
+"""Sample Scatter graph plotting thru pyplot - bivaraite"""
+
 # x = [1,2,3,4,5,6]
 # y = [8,2,5,4,5,6]
-#
-# # plt.scatter(x,y, c=x, cmap='rainbow')
+
+# plt.scatter(x,y, c=x, cmap='rainbow')
 # plt.scatter(x,y, c=x, cmap='magma')
 # plt.colorbar() #shows number to color mapping in the side of graph
 # plt.show()
@@ -24,15 +24,15 @@
 # y = [8,2,5,4,5,6]
 #
 # df = pd.DataFrame({"key1":x,"key2":y})
-#
-# """Even  when we generate scatter plot through seaborn we visualize it thru matplotlib
-# seaborn process plots faster than matplotlib
-# when we pass the df to scatterplot directly to scatterplot, it plots as x and y seperately
-#
-# Python allows 2 kinds of arguments - positional  and keyword
-# read more on user define functions in python to understand this
-# """
-#
+
+"""Even  when we generate scatter plot through seaborn we visualize it thru matplotlib
+seaborn process plots faster than matplotlib
+when we pass the df to scatterplot directly to scatterplot, it plots as x and y seperately
+
+Python allows 2 kinds of arguments - positional  and keyword
+read more on user define functions in python to understand this
+"""
+
 # sns.scatterplot(x='key1', y='key2',data=df)
 #
 # plt.show()
@@ -51,7 +51,7 @@ bar chart aggregates the value of duplicate values
 #
 # plt.bar(team, trophy)
 # plt.show()
-#
+
 
 
 
@@ -72,19 +72,19 @@ bar chart aggregates the value of duplicate values
 #
 # # labels maps teh value to each entity of the numerics
 # #autopct  show the break up with % lable on pie chart
-
+#
 
 
 
 
 """Finding Outlier"""
 
-import matplotlib.pyplot as plt
-import  numpy as np
-
-age = [3,5,67,700,8000,-600]
-plt.boxplot(age)
-plt.show()
+# import matplotlib.pyplot as plt
+# import  numpy as np
+#
+# age = [3,5,67,700,8000,-600]
+# plt.boxplot(age)
+# plt.show()
 
 
 
