@@ -93,6 +93,8 @@ print(df)
 x = df[["year"]]  #Independent variable will be in double bracket
 y = df["house_price"]  #Dependent variable wll be in single bracket
 
+z=10
+
 """Converted has model now"""
 def model_training(model_name):
     try:

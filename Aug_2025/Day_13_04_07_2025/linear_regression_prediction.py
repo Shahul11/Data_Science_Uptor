@@ -15,6 +15,11 @@ def final_predication():
     print("******* End of the Program ******")
 
 
+#  you can write the function call like this to execute, however whenn ever some one is refering this program they will execute the final_predication then ouur call in line  final_predication()
+#      so to avoid ths  use the  __name__ == "__main__":   so they wil  have control only till      print("******* End of the Program ******")
+#     final_predication()
+
+
 if __name__ == "__main__":
     final_predication()
     

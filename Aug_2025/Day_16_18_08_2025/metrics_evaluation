@@ -1,45 +1,58 @@
-Interview Questions
-=====================
-How to find only the columns that has data type as object
+Types of Model:
+1.  Regression
+    1.1: Matric evaluation
+        1.1.1:  r2_score
+                Expected value for r2 score should be between 0 to 1
+                Poor accuracy =0.01 to 0.75
+                Good Accuracy  > 0.75
+                Over Fitting = 1.0
 
-Feature Scaling
-===============
-Transforming one numerical data to another numerical data is feature scaling
-In scenarios like - when visualising the data for number of olympic medals between US and Nepal,
-the data range difference is huge to scale it in a view, so we encode the numerical data to fit in the view
+        1.1.2:   mean_squared_error
+                 expected value is as less possible.
 
-when should we go for this feature scaling?
-For the models that use distance based manipulation/algorithm
-Examples - KNN (K Nearest Neighbour), Kmeans clustering(unsupervised learning)
+        NOTE:  This mean_squared_metric cannot be applied for all the data set
 
-Feature scaling can be done in two ways
-1. Normalisation -
-==================
-This is process of converting existing numerical data into normalised numerical data.
-The term 'Normalised data' means distribution of data falls under uniform distribution.
+        Detailing: (customer review)
+            Customer Review
+            -------------------
+            y_test      y_predict       Difference      Squared_difference
+            5           4.45            0.5             0.2916
+            4           5               1               1
+            5           4.5             0.5             0.25
+            1           0.5             0.5             0.25
+            2           2.5            -0.5             0.25
+                                                        -------
+                                                         2.0416/5 = 0.4833
 
-from sklearn.preprocessing import MinMaxScaler
+         Detailing: 2(House Price)
+            Housing Review
+            -------------------
+            y_test      y_predict       Difference      Squared_difference
+            5000           4500            500            250000
+            4000           4100           -100            10000   1
+            5000           4000            200            40000
+            1000           1000            0              0
+            2000           2200           -200            40000
+                                                        -------
+                                                       340000/5 = 68000
 
-output will always be between 0 to +1
 
-2. Standardization -
-====================
-This is process of converting existing numerical data into normalised numerical data.
-The term 'standardised data' means distribution of data falls under normal distribution.
+For difference between y_test and y_predict is small mean_squared model is fitted
 
-from sklearn.preprocessing import StandardScaler
+2.  Classification
+        2.1 accuracy_score
+        2.2 confusion matrix
+        2.3 classification report
+        2.4 precision
+        2.5 f1_score
+        2.6 recall
 
-output will always be between -1 to +1
+        Note: Metrics 2.3 classification report contains report of all the other metrics
+
+        Different ways of finding metrics:
+            1.
 
 
-Notes: Datas generally falls under two kinds of distribution.
-1. Normal distribution : based on mean/average (sin wave/bell curve)
-2. Uniform distribution : based upon equally spread data on flat scale (rectangle)
-
-Analogy for normal distribution:
-students can distributed above and below average
-Analogy for uniform distribution:
-students are distributed by departments (no specifications)
 
 1.  Why model should be train and tested?
     when we fit(training) the modal with complete x and y data model may end up in overfitting
@@ -92,3 +105,32 @@ trained data might be poor and test data will be strong.It tends to give poor ac
    7.3 Now here two results producing poor accuracy score.so it is very
        evident that model is performing poorly with different subset.
    7.4Now we conclude that dataset is not worth for accuracy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
