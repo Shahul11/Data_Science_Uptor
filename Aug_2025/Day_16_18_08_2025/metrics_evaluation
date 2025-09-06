@@ -85,26 +85,20 @@ Note: Parametric  Based on data distribution
 
 
 5.  What should we do when the accuracy is poor
-
-
 What should we do for poor accuracy score(0 to 0.5)?
 
 Method1:Cross validation
-
-1.Check the data set sampling,It picks the data randomly so,sometimes
-trained data might be poor and test data will be strong.It tends to give poor accuracy.
-2.To overcome above issue ,we should cross validate data
-3.The cross validation will do different sampling with different subset.
-4.Let say,CV=5(means,my dataset will be having 5 different samplings).
-5.Each sample will produce accuracy score.
-6.[0.9,0.89,0.91,0.9,0.88]
-7.from the above sample output,it is very evident that model is performing same subsets
-   7.1. If in  this case,CV=5 produce poor accuracy score .so it is very
-        evident that model is performing poorly with different subset.
-   7.2  [0.9,0.3,0.89,0.35,0.9]
-   7.3 Now here two results producing poor accuracy score.so it is very
-       evident that model is performing poorly with different subset.
-   7.4Now we conclude that dataset is not worth for accuracy
+    1. Check the data set sampling,It picks the data randomly so,sometimes trained data might be poor and test data will be strong.It tends to give poor accuracy.
+    2. To overcome above issue ,we should cross validate data
+    3. The cross validation will do different sampling with different subset.
+    4. Let say,CV=5(means,my dataset will be having 5 different samplings).
+    5. Each sample will produce accuracy score.
+    6. [0.9,0.89,0.91,0.9,0.88]
+    7. from the above sample output,it is very evident that model is performing same subsets
+            7.1.  If in  this case,CV=5 produce poor accuracy score .so it is very evident that model is performing poorly with different subset.
+            7.2.  [0.9,0.3,0.89,0.35,0.9]
+            7.3.  Now here two results producing poor accuracy score.so it is very evident that model is performing poorly with different subset.
+            7.4.  Now we conclude that dataset is not worth for accuracy
 
 
 
