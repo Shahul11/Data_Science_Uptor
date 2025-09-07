@@ -22,5 +22,5 @@ y = df['class']
 
 model = DecisionTreeClassifier()
 
-cross_val_score_evaluation = cross_val_score(model,x,y,cv=5,scoring="accuracy")
+cross_val_score_evaluation = cross_val_score(model,x,y,cv=5,scoring="accuracy") # Split the data 5 time cv=5, also  5 is common
 print(cross_val_score_evaluation)
