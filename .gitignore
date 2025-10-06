@@ -50,3 +50,7 @@ var/
 .mypy_cache/
 coverage.xml
 htmlcov/
+
+
+# .gitignore
+*.csv
