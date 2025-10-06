@@ -26,7 +26,7 @@ X_encoded = encoder.fit_transform(X)
 dt_model = DecisionTreeClassifier(random_state=42)
 
 # 6. Define Parameter Grid for GridSearch
-param_grid = {
+parameter_search= {
     'criterion': ['gini', 'entropy'],
     'max_depth': [2, 3, 4, 5, 6, None],
     'min_samples_split': [2, 5, 10],
@@ -35,7 +35,7 @@ param_grid = {
 
 # 7. Perform Grid Search with Cross Validation
 grid_search = RandomizedSearchCV(estimator=dt_model,
-                           param_distributions=param_grid,
+                           param_distributions=parameter_search,
                            cv=5,
                            scoring='accuracy',
                            n_jobs=-1)

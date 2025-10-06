@@ -1,0 +1,14 @@
+🧠 Unsupervised Learning
+Unsupervised learning is the process of finding insights, patterns, or groupings within a dataset.
+It works only with independent variables or (X data), without labeled outputs.
+
+
+📊 Types of Unsupervised Learning:
+- K-Means Clustering
+- Hierarchical Clustering
+- PCA (Principal Component Analysis)
+- DB Scan
+- TSNE (Visualization)
+
+
+

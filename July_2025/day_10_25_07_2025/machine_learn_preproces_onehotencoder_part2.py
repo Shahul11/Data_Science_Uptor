@@ -11,7 +11,7 @@ print(df)
 # print(df)
 #
 #
-# """Newly generated dataframe with new columns and their appropraite names"""
+# """Newly generated dataframe with new columns and their appropriate names"""
 # encoded_df = pd.DataFrame(encoder_data, columns=one_hot_encoder.get_feature_names_out())
 # print(encoded_df)
 

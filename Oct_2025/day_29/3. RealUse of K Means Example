@@ -1,0 +1,19 @@
+1. 🛍️ Customer Segmentation
+- Industry: Retail, E-commerce, Banking
+- Use Case: Group customers based on purchasing behavior, demographics, or engagement levels.
+- Impact: Enables personalized marketing, targeted promotions, and product recommendations.
+- Example: An e-commerce platform clusters users into “frequent buyers,” “window shoppers,” and “discount seekers” using K-Means on purchase frequency and cart value.
+
+2. 🧠 Document Clustering
+- Industry: NLP, Search Engines
+- Use Case: Group articles or documents by topic without predefined labels.
+- Impact: Improves search relevance and topic modeling.
+- Example: News articles clustered into “sports,” “politics,” and “tech” using TF-IDF vectors and K-Means.
+
+
+3. 🏙️ Urban Planning
+- Industry: Government, Real Estate
+- Use Case: Cluster regions by population density, income, or infrastructure.
+- Impact: Informs zoning decisions and resource allocation.
+- Example: Bengaluru neighborhoods clustered by traffic, pollution, and housing prices.
+

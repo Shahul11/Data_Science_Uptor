@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # x = [1,2,3,4,5,6]
 # y = [8,2,5,4,5,6]
-
+#
 # plt.scatter(x,y, c=x, cmap='rainbow')
 # plt.scatter(x,y, c=x, cmap='magma')
 # plt.colorbar() #shows number to color mapping in the side of graph
@@ -34,7 +34,6 @@ read more on user define functions in python to understand this
 """
 
 # sns.scatterplot(x='key1', y='key2',data=df)
-#
 # plt.show()
 
 
@@ -72,19 +71,19 @@ bar chart aggregates the value of duplicate values
 #
 # # labels maps teh value to each entity of the numerics
 # #autopct  show the break up with % lable on pie chart
-#
+
 
 
 
 
 """Finding Outlier"""
 
-# import matplotlib.pyplot as plt
-# import  numpy as np
-#
-# age = [3,5,67,700,8000,-600]
-# plt.boxplot(age)
-# plt.show()
+import matplotlib.pyplot as plt
+import  numpy as np
+
+age = [3,5,67,700,8000,-600]
+plt.boxplot(age)
+plt.show()
 
 
 

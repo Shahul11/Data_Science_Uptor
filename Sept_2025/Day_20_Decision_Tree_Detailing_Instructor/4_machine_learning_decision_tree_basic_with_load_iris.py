@@ -19,7 +19,9 @@ tree.fit(X_train, y_train)
 """
 
 ### Evaluating the Performance of a Decision Tree Model
-Once a decision tree model has been fit to data, we need to evaluate its performance to determine how well it is able to make predictions. There are several metrics that can be used to evaluate the performance of a decision tree model, including accuracy, precision, recall, and the F1-score.
+
+Once a decision tree model has been fit to data, we need to evaluate its performance to determine how well it is able to make predictions. 
+There are several metrics that can be used to evaluate the performance of a decision tree model, including accuracy, precision, recall, and the F1-score.
 
 - **Accuracy:** The fraction of correct predictions made by the model.
 
@@ -48,8 +50,8 @@ confusion_matrix = confusion_matrix(y_test, y_pred)
 # print the results
 print(f"Accuracy: {accuracy}")
 print("Precision:", precision)
-print("Recall:" % recall)
-print("F1-score:" % f1)
+print("Recall:" , recall)
+print("F1-score:" , f1)
 print(confusion_matrix)
 
 

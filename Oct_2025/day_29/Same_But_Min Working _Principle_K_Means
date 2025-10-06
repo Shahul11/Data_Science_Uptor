@@ -1,0 +1,100 @@
+K-Means:
+- For grouping or forming clusters.
+- We will decide the number of clusters that is needed.
+- Each cluster value needs to be in odd number for overcome bias.
+- Number of Cluster formation is subjective to the specific issue.
+- Unsupervised Learning.
+
+
+Example
+1. - give the n_clusters = 3.
+1.1 - means, initially or randomly we groups the entire dataset into 3 clusters. because i have given 3 in the number
+1.2 - Each Cluster will be assigned a "Centroids" randomly
+1.3 - Now based on the centroids, distance will be calculated, then datapoint which is near by to that will be forming group.
+1.4 - Once done, new centroids will be formed, and then same process will happen until entire groups are grouped or clustered..
+
+Step 1: It is evident that these data dont have label (target) Now i have data which doesnt have labelling:
+
+Dhoni, Ruturai, Jadeja, Raina, Ashwin, Bravo
+Patidar, Kohli, DK, Siraj, ABD, Gayle,
+Sachin, Rohit, Pollard, Malinga, Bumrah, Hardik
+
+Step 2: Form or Find the number of clusters that needed to be formed
+n_clusters = 3
+
+Dhoni ,Patidar, Rohit, Bumrah, Ruturai, Pollard, Jadeja,
+Kohli, DK,ABD, Gayle, Raina, Ashwin, Bravo, Sirai
+Sachin, Malinga, Hardik
+
+Step 3: Randomly form 3 groups without any meaning.
+
+Cluster 1 : Kohli, DK, ABD, Gayle, Raina, Ruturaj
+Cluster 2 : Dhoni,Patidar, Rohit, Bumrah, Pollard, sirai
+Cluster 3 : Sachin, Malinga ,Hardik, jadeja,Ashwn, Bravo
+
+
+Iteration 1:
+Cluster 1 : Kohli, DK,ABD, Gayle, Raina, ,sirai (kohli)
+Cluster 2 : Dhoni, Patidar,Rohit, Bumrah, Pollard, sirai,Sachin (Rohit)
+Cluster 3: Sachin, Malinga,Hardik, jadeja, Ashwin, Bravo, Ruturai (Ruturaj)
+
+Iteration 2:
+Cluster 1 : Kohli, DK, ABD, Gayle, ,siraj Patidar
+Cluster 2 : Dhoni, ,Rohit, Bumrah, Pollard, Sachin, Malinga (Rohit)
+Cluster 3: Hardik, jadeja, Ashwin, Raina, Bravo, Ruturaj (Ruturaj)
+
+Iteration 3:
+Cluster 1 : Kohli, DK, ABD, Gayle, ,siraj ,Patidar (completed)
+Cluster 2 : Rohit, Bumrah, Pollard, Sachin, Malinga, Hardik (Completed)
+Cluster 3: Dhoni, jadeja, Ashwin, Raina, Bravo, Ruturaj (Completed)
+
+
+Example 2
+
+
+## 📊 Customer Product Data
+
+Customer_Review     | Product   | Price  | No_of_Units_Sold |                     Calculated_Value |
+|                   --------    |--------|------------------|                    ------------------ |
+| 4                      TV     | 10000  | 100              |  ---->               50               |
+| 5                      TV     | 9800   | 200              |  ---->               58               |
+| 3                      TV     | 10800  | 180              |  ---->               60               |
+| 4                      TV     | 11000  | 90               |  ---->               45               |
+| 5                      TV     | 11500  | 98               |  ---->               48               |
+| 2                      TV     | 25000  | 40               |  ---->               25               |
+
+---
+
+## 🧪 Preprocessing Instructions Recap
+
+1. **Convert `Product` to numeric**
+   → Use label encoding or one-hot encoding (e.g., `TV = 0`)
+
+2. **Standardize all columns**
+   → Use `StandardScaler` to normalize units across features
+
+3. **Apply distance-based algorithms**
+   → Use Euclidean or Manhattan distance to compare rows
+
+
+
+
+
+---
+
+### 📊 Customer Review Data Table
+
+| Customer_Review | Product | Price  | No._of_Units_Sold | Calculated_Distance |
+|------------------|---------|--------|-------------------|----------------------|
+| 1                | TV      | 10000  | 100               | 50                   |
+| 1                | TV      | 11000  | 90                | 52                   |
+|                  |         |        |                   | **Mean → 51**        |
+| 5                | TV      | 9000   | 200               | 600                  |
+| 5                | TV      | 8000   | 250               | 699                  |
+| 5                | TV      | 7000   | 300               | 703                  |
+|                  |         |        |                   | **Mean → 670**       |
+| 3                | TV      | 35000  | 30                | 20                   |
+| 3                | TV      | 25000  | 40                | 25                   |
+|                  |         |        |                   | **Mean → 22.5**      |
+
+

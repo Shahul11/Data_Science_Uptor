@@ -1,0 +1,12 @@
+PCA:
+
+1. Principle Component Analysis
+2. No target so it is comes under unsupervised algorithm.
+3. This can also be used in the preprocessing.
+4. PCA converts the any number of column into a specific column
+
+Note:
+a. When we have column which is similar and you can't choose any column because all the column
+looks same and fine. Then you should choose PCA.
+b. PCA wont be selecting the column, instead it creates a new column
+c. no of new column that we needed will be decided on n_components parameter

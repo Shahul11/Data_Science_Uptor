@@ -1,0 +1,42 @@
+🧠 Unsupervised Learning
+Unsupervised learning is the process of finding insights, patterns, or groupings within a dataset.
+It works only with independent variables or (X data), without labeled outputs.
+
+
+📊 Types of Unsupervised Learning:
+- K-Means Clustering
+- Hierarchical Clustering
+- PCA (Principal Component Analysis)
+- DB Scan
+- TSNE (Visualization)
+
+
+PCA (Principal Component Analysis)
+
+   - It is nothing but process of reducing high dimensional to  low dimension data (Columns)
+   -
+
+NOTE:
+    To reduce number of features
+
+1.  Why should we reduce the number of features
+    1.1 This is to solve the problem of "curse of dimensionality"
+    1.2 This is to address multi collinearity (when columns are highly correlated to each other ). So PCA creates
+        Un-Correlated features Ex:
+                If columns like "house_price" , "No_f_bedrooms","No_of_restroom" is part of your input data then
+                this what is called collinearity
+
+2.  How PCA works?
+    Step 1: House_Price will be in rupees , no_of_bed_rooms, no_of_rest_room will be in single digit integer. so all the
+            three input are in different scale. so we have to standardize or normalize it
+
+          Note: If you don't standardize housing_price column will take higher variance
+
+    Step 2: Each of the column ["house_price" , "No_f_bedrooms","No_of_restroom"] will be transformed
+    to have mean(Avg) of 0 under standard deviation of 1.
+
+
+
+
+
+

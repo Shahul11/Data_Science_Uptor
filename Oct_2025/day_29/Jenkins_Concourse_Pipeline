@@ -1,0 +1,60 @@
+GITHUB is Code Version Control.
+
+Jenkins/Concourse:
+
+1. Both jenkins and Concourse is a Tool
+2. Pipeline Tool
+3. Continuous Integration and Continuous Deployment.
+
+Deployment:
+
+Company: Environment
+
+Development, QA , Staging, Pre-Production, Production
+
+GITHUB is basically to upload and maintain our code.
+
+Main Branch : (latest)
+    Venkatesh : Pulls the Code ---> Push with changes ---> Creates PR
+    Siva      : Pulls the code ---> Push with changes ---> Creates PR
+    Rathna    : Pulls the code ---> Push with changes ---> Creates PR
+
+    Once PR is created as the senior person any technical lead will Merge
+
+    Venkatesh's PR will be merged into Main
+    Siva's PR will be merged into Main
+    Rathna's PR will be merged into Main
+
+On October 3, Main Branch is updated with latest of changes.
+
+I will Merging Code into Development (First Step)
+
+Now Jenkins comes into pictures:
+
+Creates a build:
+     PR : https://mohan.com/netdevops/facebook.git
+     Schedule: on every PR Merge
+     PRe-Requiste: Python, Library, Test Cases
+
+Build: Who Started ? When it is Started ? Failed or Success?
+
+Architecture:
+
+Configure:
+
+Setup Success:
+1. When PR is Merged into Main
+2. When PR is approved by two reviewers
+
+Build Creation:
+1. We would configured basic things to run
+
+Code Scanning:
+
+Tool: SNYK, Whitesource, CheckMarx, SonarCube
+
+
+
+Cricket:
+
+Net Practice, Intra Team Match, Tour Match, Actual Match

@@ -25,7 +25,8 @@ y = df['class']
 
 x_train, x_test, y_train, y_test = train_test_split(x,y, train_size=0.7, random_state=42)
 
-model = DecisionTreeClassifier(random_state=42)
+# Same as DA 21 program but added max depth parameter
+model = DecisionTreeClassifier(random_state=42,max_depth=4)
 model.fit(x_train, y_train)
 y_pred = model.predict(x_test)
 print(y_pred)

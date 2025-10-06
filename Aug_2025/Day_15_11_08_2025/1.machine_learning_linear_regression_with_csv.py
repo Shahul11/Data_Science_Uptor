@@ -34,3 +34,12 @@ print(y_predict)
 
 accuracy_check = r2_score(y_test,y_predict)
 print(accuracy_check)
+
+comparison_df = pd.DataFrame({
+    "Actual Price": y_test.values,
+    "Predicted Price": y_predict
+})
+
+# Format both columns to show full numbers
+formatted_df = comparison_df.applymap(lambda x: f"{x:,.0f}")
+print(formatted_df)

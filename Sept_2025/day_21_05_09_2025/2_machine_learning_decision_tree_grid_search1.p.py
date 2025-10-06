@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split, RandomizedSearchCV
+from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import LabelEncoder
 import category_encoders as ce
 
@@ -26,7 +26,7 @@ X_encoded = encoder.fit_transform(X)
 dt_model = DecisionTreeClassifier(random_state=42)
 
 # 6. Define Parameter Grid for GridSearch
-param_grid = {
+parameters = {
     'criterion': ['gini', 'entropy'],
     'max_depth': [2, 3, 4, 5, 6, None],
     'min_samples_split': [2, 5, 10],
@@ -34,8 +34,8 @@ param_grid = {
 }
 
 # 7. Perform Grid Search with Cross Validation
-grid_search = RandomizedSearchCV(estimator=dt_model,
-                           param_distributions=param_grid,
+grid_search = GridSearchCV(estimator=dt_model,
+                           param_grid=parameters,
                            cv=5,
                            scoring='accuracy',
                            n_jobs=-1)
