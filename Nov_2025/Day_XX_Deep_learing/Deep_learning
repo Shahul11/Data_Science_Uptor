@@ -1,0 +1,69 @@
+Deep Learning is meant for unstructured data(Image) handling.
+Unstructured data includes
+      1.Images
+     ---> coloured image
+     ---> grey scale image
+      2.Audios
+      3.Videos
+Libraries needed:
+      1.tensorflow(keras)
+      2.pytorch
+Note:
+     tensorflow was developed by google.
+     Pytorch is developed for meta.
+Understanding the sequential layer:
+------------ ---- ---------- -----
+1.Flatten----> Conversion of high dimension data into low dimension data.
+NOTE:
+    *It creates image into one-dimensional array.
+    *Image generally contains three dimensional.
+       Height
+       Width
+       Channels(grey scale or RGB)
+    *Above three dimensional will convert into single dimensional by
+     shaping into height * width * channel
+    *When our code contains 28*28=784pixel in our flatten layer it means our images are
+     in height of 28 and width of 28.
+    * 28 is not a fixed pixel value.It can change with image to image.
+2.Layers of Deep Learning Sequential Process:
+   1.Input Layer(Flatten)
+   2.Hidden Layer(Dense(128, activation='relu'))
+   3.Output Layer(Dense(10, activation='softmax'))
+    NOTE:
+       1.'128' inside the dense layer is called as neron
+       2.Based upon the complexity of the images the dense layer can have different
+         numbers(Dense(32,64,128,256,512,1024,2048))(It can be read according to hyperparameter).
+       3.A sequential or input layer has many hidden layer depends upon the input.
+       4.A Dense((10, activation='softmax')).No 10 indicates No.of images to be
+         classified.It is very according to the input.
+       5.Activation function for hidden layer and output layer can vary as we wish.
+3.Model.compile:
+     This step takes structure that we formed with sequential layer.
+       1.Optimizer is the processing in which model updates its weights based upon the
+         data exists.
+       1.1.Types of Optimizer(It is an algorithm for the model to adjust various issues and produce minimum loss):
+           NOTE: Minimization of the loss function.
+           a.Adam
+           b.SGD
+           c.RMSprop
+           d.Adagrad
+     2.Loss Function:It is basically an algorithm to find the how the model is performing
+            training.It tells you the difference between model prediction and actual.It is
+            similar to the OneHotEncoding.
+     3.Metric:How well the data is performed with optimizer and loss.
+4.Model.Fit:
+     epoch=5--->No of iteration.
+
+
+Various Architecture of Deep learning:
+------- ------------ -- ---- --------
+  1. Fully connected feed forward neural network(our example) or MLP (Multi-Layer Perceptrons)
+  2. CNN(Convolutional Neural Network)
+  3. RNN (Recurrent Neural Networks)
+  4. Transformers(NLP or LLM)(ex-Chatgpt)
+  5. GAN(Generative Adversarial Networks)(ex-Gen...)
+
+
+
+
+

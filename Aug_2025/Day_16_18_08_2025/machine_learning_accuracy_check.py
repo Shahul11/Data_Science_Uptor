@@ -4,10 +4,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from  sklearn.preprocessing import  LabelEncoder
 
-
-
-
-
 df = pd.read_csv("diamonds.csv")
 print(df)
 

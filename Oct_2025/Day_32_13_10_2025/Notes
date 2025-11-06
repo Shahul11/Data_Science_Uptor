@@ -1,0 +1,61 @@
+Unsupervised Algorithm: Hierarchical Clustering
+----------------------------------------------
+
+To check which group the data belongs to
+
+There are two types of hierarchical clustering
+1. Agglomerative (Bottom up) technique
+2. Divisive (Top down) technique
+
+Note: Both uses distance between the cluster technique
+
+Mechanism by which the data clusters is Linkage mechanism
+Here Each of the data becomes cluster by itself
+
+Agglomerative (Bottom up) technique:
+1. Every point will be considered as its own cluster
+2. Each cluster then merges with most similar cluster in a iterative way
+3. This formation happens till single cluster is formed (we will limit the number of clusters needed)
+
+Flow:
+1. Distance metric:
+The method for calculating the similarity between clusters is distance based
+
+2. The linkage criteria:
+This is rule for determining the distance between two groups of datapoints
+
+Note: Output for the same can be visualised via Dendrogram
+
+Flow Steps:
+Step1: Each data point has a individual cluster
+Dhoni, Ashwin, Rohit, Kohli, DK, Ritu, Bumrah, Siraj, Malinga
+
+Note: Each and every player is a individual cluster. Totally 9 clusters for now
+
+Step2: Each cluster will be calculated by its distance
+CSk,   CSK     MI     RCB    RCB  CSK    MI      RCB   MI
+Dhoni, Ashwin, Rohit, Kohli, DK, Ritu, Bumrah, Siraj, Malinga
+
+Step3: 2 closest cluster based on the linkage will be merged into Single cluster
+
+Step4: Again cluster will be calculated for this cluster
+Example:
+CSk,   CSK     MI     RCB    RCB  CSK    MI      RCB   MI
+Dhoni, Ashwin, Rohit, Kohli, DK, Ritu, Bumrah, Siraj, Malinga
+
+Farthest:
+[CSK           ],  CSK,     [MI,           ]  RCB,    RCB,   MI ,     RCB
+[Dhoni, Ritu   ]   Ashwin   [Rohit, Malinga]  Kholi,  DK     Bumrah   Siraj
+
+
+With each iteration, to form a single cluster
+Ritu moves near Dhoni
+Malinga moves near Rohit
+Siraj moves to Kohli
+
+Types of Linkage:
+1. Single - uses the shortest distance between the two points
+2. Complete - uses the farthest/maximum distance between the two points
+3. Average - uses the average distance between the two points and merges the closest the points
+4. Ward method - It is to reduce the cluster variance
+(wards form to reduce the variance within the cluster group)

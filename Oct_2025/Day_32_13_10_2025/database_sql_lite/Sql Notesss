@@ -1,0 +1,25 @@
+DML - process inside the table (contents of the table)
+DDL - process for the table (structure of the table)
+
+create_table = """create table course('course_id' int, 'course_name' text)"""
+
+
+create = syntax
+table = syntax
+course = user defined table name (as per the user needs)
+
+course_id, course_names = columns of the course table (it can be named anyways to user needs)
+int and text are datatypes of the columns respectively for course id and course name
+
+we can include constraints (conditions) while creating table
+1. auto increment
+2. primary key, foreign key
+3. not null
+4. unique
+5.
+
+mySQL, Sallite3, oracle are called as relational database management system (RDBMS)
+because the tables can be connected to other tables. Modeling of the tables can be visually
+seen thru powerBI|
+
+MongoDB is called as non relational database management system
